@@ -1,7 +1,7 @@
 /*
  * @Author: zhangweijuan
  * @Date: 2020-11-10 17:00:24
- * @LastEditTime: 2021-01-21 17:46:39
+ * @LastEditTime: 2021-01-22 09:12:40
  * @LastEditors: Please set LastEditors
  * @Description: 购物车
  * @FilePath: \wei-go\pages\cart\index.js
@@ -27,8 +27,8 @@ Page({
       const cart = wx.getStorageSync('cart') || [];
       // every 数组方法 会遍历 会接收一个回调函数 那么每一个回调函数都返回true， 那么every方法的返回值为true
       // 只要有一个返回值为false，则停止循环执行，直接返回false
-      // 空数组 调用every  返回值就是true
-      // const allChecked = cart.length > 0 ? cart.every(v=>v.checked) : false;
+      // 空数组 调用every  返回值就是true 
+      // const allChecked = cart.length > 0 ? cart.every(v=>v.checked) : false; 
       let totalPrice = 0;
       let totalNum = 0;
       let allChecked = true;
